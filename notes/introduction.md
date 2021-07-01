@@ -22,6 +22,15 @@ Rust is typically installed from [rustup.rs](https://rustup.rs). I also installe
     - Source code goes in *src*
 - `cargo run` compiles and then runs the source code
 
+## Compiling for Release
+To compile for release, pass the `--release` flag to `cargo build` or `cargo run`.
+
+## cargo vs. rustc
+- **rustc** is the Rust compiler
+- **cargo** is a more general Rust tool which provides a simple interface to Rust tasks
+    - `cargo build` invokes **rustc** on our behalf
+- The `--verbose` flag will print debugging information and show what is being passed to **rustc**
+
 ## Rust Features
 ### Unicode
 Unicode is supported out of the box.
@@ -46,3 +55,19 @@ Relatively rare but sometimes required.
 
 ### Implicit Returns
 Rust provides a `return` keywork but it's usually omitted from code.
+
+### Macros
+Macros return code instead of values and are often used to simplify common patterns.
+
+## What is Rust?
+- The distinguishing feature is that it prevents invalid data access at compile time
+- [Research](https://msrc-blog.microsoft.com/2019/07/18/we-need-a-safer-systems-programming-language/) has shown that ~70% of serious security bugs are related to invalid data access
+- Guarentees memory safety without imposing run time costs
+- Labelled as a systems programming language
+
+### Rust Safety
+Rust programs are free from:
+- Danging pointers
+- Data races
+- Buffer overflow
+- Iterator invalidation
