@@ -71,3 +71,34 @@ Rust programs are free from:
 - Data races
 - Buffer overflow
 - Iterator invalidation
+
+### Overarching Features of Rust
+#### Performance
+- No garbage collector
+- Pushes burden on the compiler
+  
+#### Concurrency
+- No GIL to constrain a thread's speed
+- "Fearless concurrency"
+
+#### Memory efficiency
+- Fixed-size structures, byte level management
+- High-level constructs incur minimal run-time overhead
+
+## Downsides of Rust
+- Cyclic data structuers are difficult to model in Rust
+- Compile times are slower
+- Rust is strict meaning that programs only compile if everything is just right
+- The language is large
+
+## Best Fits for Rust
+- Command-line utilities
+- Data processing
+- Extending applications
+- Resource contrained environments
+- Server-side applications
+- Desktop applications
+- Desktop
+- Mobile
+- Web (WASM)
+- Systems programming
