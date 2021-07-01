@@ -22,11 +22,27 @@ Rust is typically installed from [rustup.rs](https://rustup.rs). I also installe
     - Source code goes in *src*
 - `cargo run` compiles and then runs the source code
 
-## Unicode
+## Rust Features
+### Unicode
 Unicode is supported out of the box.
 
-## iter()
+### iter()
 Many types (e.g. arrays) have an `.iter()` method that returns an iterator.
 
-## &
+### &
 & (ampersand) borrows region for read-only access.
+
+### Method Syntax
+Rust is **not** object-oriented but it has a method syntax.
+
+### Higher-order Programming
+Functions can accept and return functions.
+
+### Type Annotations
+Relatively rare but sometimes required.
+
+### Conditional Compilation
+`cfg!()` checks compilation configuration at compile time and can be used to conditionally compile code.
+
+### Implicit Returns
+Rust provides a `return` keywork but it's usually omitted from code.

@@ -1,4 +1,4 @@
-fn main() {
+fn greet_world() {
     println!("Hello, world!");
 
     let french = "Salut le monde!";
@@ -8,4 +8,8 @@ fn main() {
     for region in regions.iter() {
         println!("{}", &region);
     }
+}
+
+fn main() {
+    greet_world();
 }
